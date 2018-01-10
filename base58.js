@@ -3,9 +3,13 @@
  *  - encodes Uint8Array to base58 Uint8Array
  *  - decodes Uint8Array from base58 Uint8Array
  *
- * usage:
+ * Usage:
  *   base58.encode(Uint8Array);
  *   base58.decode(Uint8Array);
+ *
+ * Examples:
+ *   base58.encode(new TextEncoder().encode("Hello"));
+ *   new TextDecoder().decode(base58.decode("9Ajdvzr"));
  *
  * (c) 2018 Xia Xiongjun
  */
